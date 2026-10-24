@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "meta-tracker"
+version = "0.1.0"
+description = "Tracks how the competitive Pokémon meta changes over time using Smogon usage stats."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "requests>=2.31",
+    "pandas>=2.0",
+    "matplotlib>=3.7",
+    "networkx>=3.1",
+]
+
+[project.optional-dependencies]
+dashboard = ["streamlit>=1.50", "plotly>=5.18"]
+dev = ["pytest>=7", "jupyter"]
+
+[project.scripts]
+meta-tracker = "meta_tracker.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+meta_tracker = ["*.sql"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,6 @@
+# Meta-changing events used for before/after analysis.
+# month = the month the event happened; analysis compares the months before it with the months after it.
+# Add bans and suspect tests from Smogon's tiering announcements (smogon.com/forums) and verify the dates.
+format,month,name,kind,notes
+gen9ou,2023-09,The Teal Mask DLC,dlc,Scarlet/Violet DLC part 1 released 13 Sep 2023
+gen9ou,2023-12,The Indigo Disk DLC,dlc,Scarlet/Violet DLC part 2 released 14 Dec 2023
