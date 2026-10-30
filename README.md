@@ -16,43 +16,55 @@ Most sites (including Smogon's own pages) show one month at a time. This project
 
 ## Findings
 
-Gen 9 OU, October 2024 to September 2025: **13.07 million battles** at the 1695 rating cutoff.
+Gen 9 OU, October 2024 to September 2026: **24.2 million battles** at the 1695 rating cutoff. Event dates come
+from [Smogon's tiering history](https://www.smogon.com/forums/threads/sv-ou-forum-rules-ou-council-info-and-announcements.3710769/).
 
-**1. The top of the meta barely moves.** Great Tusk was #1 in all 12 months (32.9% to 40.6% usage), and
-Kingambit and Gholdengo took the next spots in nearly every month. The top 10 changed by at most two
-Pokémon a month, and together they held 34.5% to 37.0% of all team slots throughout the year.
+**1. The top of the meta barely moves.** Great Tusk was #1 in all 24 months (30.6% to 40.6% usage), and
+Great Tusk, Kingambit and Gholdengo were the top three in 20 of them. The top 10 never changed by more than
+two Pokémon in a month, and together they held 32.7% to 37.4% of all team slots.
 
 ![Usage heatmap of the 15 most used Pokémon](reports/figures/gen9ou-heatmap.png)
 
-**2. The biggest change of the year was a ban.** Roaring Moon went from #4 (21.1%) in March 2025 to #114
-(0.4%) in April, after Smogon's voters [banned it on 1 April](https://www.smogon.com/forums/threads/sv-ou-forum-rules-ou-council-info-and-announcements.3710769/)
-(66.07%, 74 to 38). That's the sharpest monthly move in the dataset. Its usage had actually jumped 5.7
-points in March, the month the suspect test was announced.
+**2. The biggest change was a ban.** Roaring Moon went from #4 (21.1%) in March 2025 to #114 (0.4%) in April,
+after voters banned it on 1 April (66.07%, 74 to 38). That's the sharpest monthly move in the dataset. Its
+usage had actually jumped 5.7 points in March, the month the suspect test was announced.
 
-**3. Usage shifted to several Pokémon, not one replacement.** Comparing the three months either side of
-the ban (January to March vs May to July), nobody took Roaring Moon's whole share. Ogerpon-Wellspring gained
+**3. Usage shifted to several Pokémon, not one replacement.** Comparing the three months either side of the
+ban (January to March vs May to July 2025), nobody took Roaring Moon's whole share. Ogerpon-Wellspring gained
 5.0 points, Hatterene 4.8, Iron Treads 3.4 and Ceruledge 3.4, while Samurott-Hisui lost 3.4. This shows
 timing, not proof that the ban caused each change.
 
 ![Average usage before and after the Roaring Moon ban](reports/figures/gen9ou-event-2025-04-roaring-moon-ban.png)
 
-**4. Hatterene was the year's biggest riser.** It doubled from 7.3% to 14.5% and reached the top 10 in
-September 2025. Tornadus-Therian rose from 1.3% to 6.5% and Ceruledge from 1.8% to 6.0%, moving from niche
-picks to regular ones.
+**4. Retests create a one-month spike.** Palafin was only legal during its retest from 20 December 2024, yet it
+reached #14 (13.5%) that month, then 2.5% in January after voters kept it banned on 4 January. Volcarona did
+the same in May 2026: #23 (9.2%), then gone in June after it stayed banned on 16 May. Both are reminders that
+a sudden spike can come from a test rather than a real trend. The months around Palafin's retest also saw lasting
+shifts (Pecharunt +6.9 points, Ting-Lu +6.5, Great Tusk −5.3 comparing October to November with January to
+March), which the retest alone doesn't explain.
 
-**5. A two-week retest left a mark on the stats.** Palafin was only legal during its
-[retest](https://www.smogon.com/forums/threads/np-sv-ou-suspect-process-round-16-zero-to-hero.3756907/), which
-began on 20 December 2024. Even so, it reached #14 (13.5%) that month, then 2.5% in January after voters kept
-it banned on 4 January (24.27% for an unban). Comparing October and November with January to March, Pecharunt
-gained 6.9 points and Ting-Lu 6.5, while Great Tusk lost 5.3 and Raging Bolt 5.1. Those shifts lasted after
-Palafin left, so the retest alone doesn't explain them.
+**5. An unban isn't always a comeback.** Regieleki was unbanned on 26 April 2026 after the Tera Blast ban. It
+peaked at just 2.2% (#61) in May and was at 0.8% by September, so it never became a regular pick.
 
-**6. The meta forms clear team styles.** Clustering who gets paired with whom gives four groups in
-September 2025. Pairings can be very strong: Moltres and Slowking-Galar each appear with Great Tusk on
-51.7% of their teams, and Glimmora with Kingambit on 46.8%. The groups also changed over the year, so
-archetypes aren't fixed even when the top Pokémon are.
+**6. The Tera Blast ban lines up with a change at #2.** Gholdengo overtook Kingambit from April to July 2026,
+averaging 27.0% in the three months after the ban against 22.3% in the three before. Its rise began in April
+though, before the ban on the 26th, so the ban can't take all the credit. Kingambit returned to #2 in August
+and hit its two-year high of 30.7% in September.
 
-![Teammate network](reports/figures/gen9ou-2025-09-network.png)
+**7. The slowest changes can be the biggest.** Cresselia was the biggest two-year riser, from 0.6% to 7.8%,
+with nearly all of that since June 2026. Ceruledge went from 1.8% to 8.0%, Kyurem from 11.0% to 17.0% and
+Glimmora from 9.2% to 15.1%. Dragapult fell from 18.1% to a two-year low of 10.4%.
+
+**8. Fewer battles are being played.** Monthly battles fell 55% from 1.29 million in March 2026 to 574,541 in
+September 2026, the lowest in the dataset. The stats can't say why, but recent months rest on smaller samples.
+
+![Battles per month and meta concentration](reports/figures/gen9ou-activity.png)
+
+**9. The meta forms clear team styles.** Clustering who gets paired with whom gives four groups in September
+2026. Pairings can be very strong: Landorus-Therian appears with Kingambit on 60.3% of its teams, and Dragonite
+with Gholdengo on 53.1%.
+
+![Teammate network](reports/figures/gen9ou-2026-09-network.png)
 
 ## How it works
 
@@ -84,10 +96,10 @@ python -m venv .venv
 .venv\Scripts\activate            # macOS/Linux: source .venv/bin/activate
 pip install -e ".[dashboard,dev]"
 
-meta-tracker ingest --start 2024-10 --end 2025-09   # 12 months of gen9ou (cutoff 1695)
+meta-tracker ingest --start 2024-10 --end 2026-09   # 24 months of gen9ou (cutoff 1695)
 meta-tracker status
 meta-tracker query                                  # list the SQL queries
-meta-tracker query biggest_risers --month 2025-09
+meta-tracker query biggest_risers --month 2026-09
 meta-tracker query pokemon_trend --pokemon "Kingambit"
 meta-tracker report                                 # reports/gen9ou-<latest>.md
 meta-tracker charts                                 # reports/figures/*.png
@@ -95,7 +107,7 @@ meta-tracker export                                 # exports/meta-gen9ou.json f
 streamlit run dashboard/app.py
 ```
 
-Other formats: `meta-tracker --format gen9uu --cutoff 1630 ingest --start 2025-01 --end 2025-09`.
+Other formats: `meta-tracker --format gen9uu --cutoff 1630 ingest --start 2025-01 --end 2026-09`.
 OU uses cutoffs 0/1500/1695/1825; lower tiers use 0/1500/1630/1760.
 
 ## The SQL questions

@@ -18,12 +18,17 @@ jobs:
           python-version: "3.11"
       - run: pip install -e .
       - name: Fetch new months
-        run: meta-tracker -v update
+        run: |
+          meta-tracker -v update
+          meta-tracker --format gen9uu --cutoff 1630 -v update
       - name: Regenerate report and charts
         run: |
           meta-tracker report
           meta-tracker charts
           meta-tracker export
+          meta-tracker --format gen9uu --cutoff 1630 report
+          meta-tracker --format gen9uu --cutoff 1630 charts
+          meta-tracker --format gen9uu --cutoff 1630 export
       - name: Commit changes
         run: |
           git config user.name "github-actions[bot]"
