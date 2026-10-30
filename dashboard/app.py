@@ -17,11 +17,12 @@ st.set_page_config(page_title="Pokémon Meta Tracker", page_icon="📈", layout=
 
 
 @st.cache_resource
-def get_conn():
+def get_conn(db_modified: float):
+    # db_modified is only a cache key: a redeploy replaces the DB file, so reopen when it changes.
     return db.connect(config.DB_PATH)
 
 
-conn = get_conn()
+conn = get_conn(config.DB_PATH.stat().st_mtime if config.DB_PATH.exists() else 0)
 formats = [f for (f,) in conn.execute("SELECT DISTINCT format FROM format_months ORDER BY format")]
 if not formats:
     st.error("The database is empty. Run `meta-tracker ingest --start 2025-01 --end 2025-12` first.")
