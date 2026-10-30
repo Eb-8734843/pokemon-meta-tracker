@@ -10,7 +10,8 @@ Most sites (including Smogon's own pages) show one month at a time. This project
 - **Teammate network graph**: which Pokémon cluster into archetypes
 - **Written insight reports**: a monthly "what changed and why" report
 
-> Live dashboard: _add your Streamlit Cloud link here_
+> **Live dashboard: [Open the Meta Tracker](https://pokemon-meta-tracker-lvxim6hx4xmcluqcqqmvst.streamlit.app)**
+>
 > Used by the [Pokémon Team Builder](https://pokemon-team-builder-lemon.vercel.app), which suggests teammates from this project's data.
 
 ![Teammate network](reports/figures/gen9ou-2025-09-network.png)
