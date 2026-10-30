@@ -1,6 +1,6 @@
 import pytest
 
-from meta_tracker import analysis, charts, db, export, parse, queries, report
+from meta_tracker import analysis, charts, db, export, names, parse, queries, report
 
 from .conftest import MONTHS, usage_text
 
@@ -82,3 +82,18 @@ def test_export_shape(conn):
 ])
 def test_slug(name, expected):
     assert export.slug(name) == expected
+
+
+def test_names_use_lookup_then_fall_back():
+    assert names.item_name("heavydutyboots") == "Heavy-Duty Boots"
+    assert names.move_name("uturn") == "U-turn"
+    assert names.item_name("nothing") == "No item"
+    assert names.move_name("notarealmove") == "Notarealmove"
+
+
+def test_export_has_readable_names_for_known_ids(conn):
+    conn.execute("UPDATE moves SET move = 'uturn' WHERE move = 'Protect'")
+    conn.execute("UPDATE items SET item = 'heavydutyboots' WHERE item = 'Leftovers'")
+    first = export.build_export(conn, "gen9ou")["pokemon"][0]
+    assert "U-turn" in [m for m, _ in first["moves"]]
+    assert "Heavy-Duty Boots" in [i for i, _ in first["items"]]

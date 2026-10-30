@@ -86,6 +86,7 @@ smogon.com/stats ──fetch.py──▶ data/raw/ ──parse.py──▶ DataF
 | `analysis.py` | Risers/fallers, before/after event impact, teammate graph and archetype clustering |
 | `report.py` | Monthly "what changed and why" Markdown report |
 | `charts.py` | Six matplotlib charts for the README and reports |
+| `names.py` | Turns ids like `heavydutyboots` into Heavy-Duty Boots, using Pokémon Showdown's data |
 | `export.py` | JSON export (usage, history, teammates, items, moves) consumed by the JavaScript Team Builder |
 | `pipeline.py` | Fetch, then parse, then load; `update` picks up newly published months |
 

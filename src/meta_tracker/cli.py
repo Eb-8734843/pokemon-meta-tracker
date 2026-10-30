@@ -8,7 +8,7 @@ import sys
 
 import pandas as pd
 
-from . import charts, config, db, export, fetch, pipeline, queries, report
+from . import charts, config, db, export, fetch, names, pipeline, queries, report
 
 
 def _months(args) -> list[str]:
@@ -67,6 +67,10 @@ def cmd_export(args, conn):
     print(f"Wrote {export.write_export(conn, args.format, args.month)}")
 
 
+def cmd_names(args, conn):
+    print(f"Wrote {names.download()}")
+
+
 def build_parser() -> argparse.ArgumentParser:
     p = argparse.ArgumentParser(prog="meta-tracker", description=__doc__)
     p.add_argument("--db", default=config.DB_PATH, help="SQLite database path")
@@ -107,6 +111,8 @@ def build_parser() -> argparse.ArgumentParser:
     s = sub.add_parser("export", help="write exports/meta-<format>.json for the Team Builder")
     s.add_argument("--month", help="default: latest loaded month")
     s.set_defaults(func=cmd_export)
+
+    sub.add_parser("names", help="refresh item and move names from Showdown").set_defaults(func=cmd_names)
     return p
 
 

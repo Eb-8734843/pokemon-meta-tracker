@@ -10,6 +10,8 @@ from pathlib import Path
 
 import pandas as pd
 
+from . import names
+
 SQL_FILE = Path(__file__).with_name("queries.sql")
 
 
@@ -42,4 +44,10 @@ def run(
 ) -> pd.DataFrame:
     query = load_queries()[name]
     params = {"format": format, "month": month, "pokemon": pokemon, "limit": limit}
-    return pd.read_sql_query(query.sql, conn, params=params)
+    df = pd.read_sql_query(query.sql, conn, params=params)
+    if name == "top_items_and_moves":
+        df["name"] = [
+            names.item_name(n) if k == "item" else names.move_name(n)
+            for k, n in zip(df["kind"], df["name"])
+        ]
+    return df

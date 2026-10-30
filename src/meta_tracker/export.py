@@ -10,7 +10,7 @@ from pathlib import Path
 
 import pandas as pd
 
-from . import config, db
+from . import config, db, names
 
 EXPORT_DIR = config.PROJECT_ROOT / "exports"
 
@@ -65,8 +65,8 @@ def build_export(
     )
     mates_by, items_by, moves_by = (
         _grouped(mates, "name", ["teammate", "pct"], 15),
-        _grouped(items, "name", ["item", "pct"], 5),
-        _grouped(moves, "name", ["move", "pct"], 8),
+        _grouped(items.assign(item=items["item"].map(names.item_name)), "name", ["item", "pct"], 5),
+        _grouped(moves.assign(move=moves["move"].map(names.move_name)), "name", ["move", "pct"], 8),
     )
 
     # Usage history for the trend sparkline in the Team Builder.
