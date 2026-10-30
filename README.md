@@ -14,16 +14,41 @@ Most sites (including Smogon's own pages) show one month at a time. This project
 >
 > Used by the [Pokémon Team Builder](https://pokemon-team-builder-lemon.vercel.app), which suggests teammates from this project's data.
 
-![Teammate network](reports/figures/gen9ou-2025-09-network.png)
-
 ## Findings
 
-_Fill this in as you analyse. Example from the generated September 2025 gen9ou report:_
+Gen 9 OU, October 2024 to September 2025: **13.07 million battles** at the 1695 rating cutoff.
 
-- Great Tusk is the most used Pokémon (37%) and still rising.
-- **Moltres** was the biggest riser (+2.7 pts), and is paired with Great Tusk on over half of its teams.
-- **Iron Moth** was the biggest faller (−4.0 pts).
-- Teammate clustering splits the meta into three archetypes (see the network above).
+**1. The top of the meta barely moves.** Great Tusk was #1 in all 12 months (32.9% to 40.6% usage), and
+Kingambit and Gholdengo took the next spots in nearly every month. The top 10 changed by at most two
+Pokémon a month, and together they held 34.5% to 37.0% of all team slots throughout the year.
+
+![Usage heatmap of the 15 most used Pokémon](reports/figures/gen9ou-heatmap.png)
+
+**2. The biggest change of the year was one Pokémon disappearing.** Roaring Moon went from #4 (21.1%) in
+March 2025 to #114 (0.4%) in April, then out of the stats completely. That's the sharpest monthly move in
+the dataset, and a drop that sudden points to a tiering decision rather than players losing interest.
+*(Confirming the cause against Smogon's announcements is the next step, so it can go through the event
+analysis.)*
+
+**3. Usage shifted to several Pokémon, not one replacement.** Comparing the three months either side of
+April 2025, nobody took Roaring Moon's whole share. Instead, Ogerpon-Wellspring gained 5.0 points, Hatterene
+4.8, Iron Treads 3.4 and Ceruledge 3.4. This compares before and after, so it shows timing, not proof that
+Roaring Moon's exit caused each rise.
+
+**4. Hatterene was the year's biggest riser.** It doubled from 7.3% to 14.5% and reached the top 10 in
+September 2025. Tornadus-Therian rose from 1.3% to 6.5% and Ceruledge from 1.8% to 6.0%, moving from niche
+picks to regular ones.
+
+**5. Palafin only lasted two months.** It appeared at #14 (13.5%) in December 2024, fell to 2.5% in
+January, and was gone by February. The same January also brought big moves elsewhere: Ting-Lu +5.6,
+Pecharunt +4.8 and Great Tusk −5.1, making it the most disrupted month besides April.
+
+**6. The meta forms clear team styles.** Clustering who gets paired with whom gives four groups in
+September 2025. Pairings can be very strong: Moltres and Slowking-Galar each appear with Great Tusk on
+51.7% of their teams, and Glimmora with Kingambit on 46.8%. The groups also changed over the year, so
+archetypes aren't fixed even when the top Pokémon are.
+
+![Teammate network](reports/figures/gen9ou-2025-09-network.png)
 
 ## How it works
 
