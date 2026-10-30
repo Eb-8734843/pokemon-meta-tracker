@@ -24,24 +24,28 @@ Pokémon a month, and together they held 34.5% to 37.0% of all team slots throug
 
 ![Usage heatmap of the 15 most used Pokémon](reports/figures/gen9ou-heatmap.png)
 
-**2. The biggest change of the year was one Pokémon disappearing.** Roaring Moon went from #4 (21.1%) in
-March 2025 to #114 (0.4%) in April, then out of the stats completely. That's the sharpest monthly move in
-the dataset, and a drop that sudden points to a tiering decision rather than players losing interest.
-*(Confirming the cause against Smogon's announcements is the next step, so it can go through the event
-analysis.)*
+**2. The biggest change of the year was a ban.** Roaring Moon went from #4 (21.1%) in March 2025 to #114
+(0.4%) in April, after Smogon's voters [banned it on 1 April](https://www.smogon.com/forums/threads/sv-ou-forum-rules-ou-council-info-and-announcements.3710769/)
+(66.07%, 74 to 38). That's the sharpest monthly move in the dataset. Its usage had actually jumped 5.7
+points in March, the month the suspect test was announced.
 
 **3. Usage shifted to several Pokémon, not one replacement.** Comparing the three months either side of
-April 2025, nobody took Roaring Moon's whole share. Instead, Ogerpon-Wellspring gained 5.0 points, Hatterene
-4.8, Iron Treads 3.4 and Ceruledge 3.4. This compares before and after, so it shows timing, not proof that
-Roaring Moon's exit caused each rise.
+the ban (January to March vs May to July), nobody took Roaring Moon's whole share. Ogerpon-Wellspring gained
+5.0 points, Hatterene 4.8, Iron Treads 3.4 and Ceruledge 3.4, while Samurott-Hisui lost 3.4. This shows
+timing, not proof that the ban caused each change.
+
+![Average usage before and after the Roaring Moon ban](reports/figures/gen9ou-event-2025-04-roaring-moon-ban.png)
 
 **4. Hatterene was the year's biggest riser.** It doubled from 7.3% to 14.5% and reached the top 10 in
 September 2025. Tornadus-Therian rose from 1.3% to 6.5% and Ceruledge from 1.8% to 6.0%, moving from niche
 picks to regular ones.
 
-**5. Palafin only lasted two months.** It appeared at #14 (13.5%) in December 2024, fell to 2.5% in
-January, and was gone by February. The same January also brought big moves elsewhere: Ting-Lu +5.6,
-Pecharunt +4.8 and Great Tusk −5.1, making it the most disrupted month besides April.
+**5. A two-week retest left a mark on the stats.** Palafin was only legal during its
+[retest](https://www.smogon.com/forums/threads/np-sv-ou-suspect-process-round-16-zero-to-hero.3756907/), which
+began on 20 December 2024. Even so, it reached #14 (13.5%) that month, then 2.5% in January after voters kept
+it banned on 4 January (24.27% for an unban). Comparing October and November with January to March, Pecharunt
+gained 6.9 points and Ting-Lu 6.5, while Great Tusk lost 5.3 and Raging Bolt 5.1. Those shifts lasted after
+Palafin left, so the retest alone doesn't explain them.
 
 **6. The meta forms clear team styles.** Clustering who gets paired with whom gives four groups in
 September 2025. Pairings can be very strong: Moltres and Slowking-Galar each appear with Great Tusk on

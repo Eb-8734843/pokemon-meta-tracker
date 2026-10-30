@@ -1,6 +1,10 @@
 # Meta-changing events used for before/after analysis.
 # month = the month the event happened; analysis compares the months before it with the months after it.
-# Add bans and suspect tests from Smogon's tiering announcements (smogon.com/forums) and verify the dates.
+# Add bans and suspect tests from the Tiering History post in the SV OU forum rules thread on smogon.com.
 format,month,name,kind,notes
 gen9ou,2023-09,The Teal Mask DLC,dlc,Scarlet/Violet DLC part 1 released 13 Sep 2023
 gen9ou,2023-12,The Indigo Disk DLC,dlc,Scarlet/Violet DLC part 2 released 14 Dec 2023
+gen9ou,2024-10,Kyurem unbanned,unban,"Banned by suspect test 29 Sep 2024 (61.76%), unbanned 11 Oct 2024 after illegitimate votes were uncovered"
+gen9ou,2024-11,Gliscor suspect test,suspect,"Stayed legal 17 Nov 2024 (56.67% for a ban)"
+gen9ou,2024-12,Palafin retest,suspect,"Legal for the retest from 20 Dec 2024; stayed banned 4 Jan 2025 (24.27% for an unban)"
+gen9ou,2025-04,Roaring Moon ban,ban,"Banned by suspect test 1 Apr 2025 (66.07%, 74 to 38)"
