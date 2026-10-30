@@ -88,7 +88,8 @@ with tab_events:
     if ev.empty:
         st.info("No events for this format. Add rows to data/events.csv and run `meta-tracker events`.")
     else:
-        choice = st.selectbox("Event", ev.itertuples(), format_func=lambda e: f"{e.month}: {e.name}")
+        # Newest first, so the tab opens on an event with data on both sides.
+        choice = st.selectbox("Event", ev.iloc[::-1].itertuples(), format_func=lambda e: f"{e.month}: {e.name}")
         window = st.slider("Months either side", 1, 6, 3)
         try:
             impact = analysis.event_impact(conn, fmt, choice.month, window=window, n=12)
