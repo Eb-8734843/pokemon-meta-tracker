@@ -6,13 +6,13 @@ picking up the work in a new session or on another computer.
 > "I built a data pipeline that analyses the competitive Pokémon meta, a web app that uses that data
 > to coach team building, and an iOS app that optimises collection spending."
 
-## Status (November 2026)
+## Status (7 November 2026)
 
 | # | Project | Status | Live | Code |
 | --- | --- | --- | --- | --- |
 | 1 | Python: Competitive Meta Tracker | Done, updates itself monthly | [Dashboard](https://pokemon-meta-tracker-lvxim6hx4xmcluqcqqmvst.streamlit.app) | [repo](https://github.com/Eb-8734843/pokemon-meta-tracker) |
 | 2 | JavaScript: Team Builder | Done | [Website](https://pokemon-team-builder-lemon.vercel.app) | [repo](https://github.com/Eb-8734843/pokemon-team-builder) |
-| 3 | SwiftUI: TCG Collection Tracker | **Not started**, to be built on the MacBook | | |
+| 3 | SwiftUI: TCG Collection Tracker | **In progress** on the MacBook (week 1 done) | | [repo](https://github.com/Eb-8734843/pokemon-tcg-tracker) |
 
 Open work for projects 1 and 2 is in each repo's GitHub Issues. Each repo also has a `CLAUDE.md` with
 its commands and conventions.
